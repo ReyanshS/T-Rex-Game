@@ -104,8 +104,10 @@ function draw() {
     trex.velocityY = 0
     gameover.visible = true
     restart.visible = true
-    if(mousePressedOver(restart)){
+    if(mousePressedOver(restart) || touches.length > 0){
       reset()
+      touches = []
+      trex.velocityY = 0
     }
   }
   drawSprites();
