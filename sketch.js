@@ -34,7 +34,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
 
   //create a trex sprite
-  trex = createSprite(50,height - 20,20,50);
+  trex = createSprite(width - 550,height - 20,20,50);
   trex.addAnimation("running", trex_running);
   trex.addAnimation("collided", trex_collided)
   //adding scale and position to trex
